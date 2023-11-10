@@ -90,12 +90,20 @@ document.getElementById("agregar").addEventListener("click", () => {
     const key = `${Object.keys(data.tasks).length + 1}`;
     data.tasks[key] = newTask;
     array = Object.values(data.tasks);
+    alert("Agregado")
   });
 
 document.getElementById("resultFilter").addEventListener("change",()=>{
     const elementSelected = document.getElementById("resultFilter")
     const busca = array.find((element)=>element.task==elementSelected.value)
     const fielsTask = document.getElementById("taskField")
-    fielsTask.append(busca.task)
-    console.log(busca);
+    const stateField = document.getElementById("stateField")
+    const endField = document.getElementById("endField")
+    fielsTask.value = busca.task
+    stateField.value = busca.state
+    endField.value = busca.end
+})
+
+document.getElementById("editar").addEventListener("click",()=>{
+    alert('no alcance')
 })
