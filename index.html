@@ -6,7 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Actividades</h1>
+    <br>Tipo de filtrado
+    <select name="name" id="tipoFilter">
+        <option value="100">selecione...</option>
+        <option value="0">Actividades cumplidas</option>
+        <option value="1">Actividades no cumplidas vigentes</option>
+        <option value="2">Actividades cumplidas no vigentes</option>
+        <option value="3">Todas las actividades</option>
+    </select>
+    <br>Resultado
+    <select name="result" id="resultFilter">
+        <option value="0">Actividades cumplidas</option>
+    </select>
+    <br>
+    <label for="name">Tarea:</label>
+    <input type="text" id="taskField"/>
+    <label for="name">Estado:</label>
+    <input type="text" id="stateField"/>
+    <label for="name">Finalizacion:</label>
+    <input type="text" id="endField"/>
+    <br>
+    <button id="editar">Editar</button>
+
+    <h2>Insertar una nueva Tarea</h2>
+    <label for="name">Tarea:</label>
+    <input type="text" id="task"/>
+    <label for="name">Estado:</label>
+    <input type="text" id="state"/>
+    <label for="name">Finalizacion:</label>
+    <input type="text" id="end"/>
+    <br>
+    <button id="agregar">Agregar</button>
 
     <script src="scrip.js"></script>
 </body>
